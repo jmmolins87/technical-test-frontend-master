@@ -1,0 +1,62 @@
+<div class="bg-white/5 border border-white/10 rounded-lg p-3 md:p-4 shadow-sm flex flex-col gap-3 text-white/80">
+	<div class="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+		<div class="flex flex-row gap-2 md:order-1 md:justify-start md:w-auto w-full">
+			<div role="tablist" aria-label="Tipo de contenido"
+				class="flex w-full sm:inline-flex sm:w-auto rounded-full border border-white/20 overflow-hidden justify-center text-center">
+				<button role="tab" [attr.aria-selected]="value.showMovies" (click)="toggleFlag('showMovies')"
+					[class]="value.showMovies ? 'px-4 py-1.5 text-sm focus:outline-none bg-white text-gray-900 inline-flex gap-2 w-1/2 flex-1 min-w-0 sm:w-auto justify-center text-center' : 'px-4 py-1.5 text-sm focus:outline-none text-white/70 hover:bg-white/10 inline-flex gap-2 w-1/2 flex-1 min-w-0 sm:w-auto justify-center text-center'">
+					<span>🎬</span><span>Películas</span>
+				</button>
+				<button role="tab" [attr.aria-selected]="value.showVideogames" (click)="toggleFlag('showVideogames')"
+					[class]="value.showVideogames ? 'px-4 py-1.5 text-sm focus:outline-none bg-white text-gray-900 inline-flex gap-2 w-1/2 flex-1 min-w-0 sm:w-auto justify-center text-center' : 'px-4 py-1.5 text-sm focus:outline-none text-white/70 hover:bg-white/10 inline-flex gap-2 w-1/2 flex-1 min-w-0 sm:w-auto justify-center text-center'">
+					<span>🎮</span><span>Videojuegos</span>
+				</button>
+			</div>
+		</div>
+		<div class="flex flex-col flex-wrap gap-2 mt-2 sm:mt-0 w-full sm:flex-row md:order-2 md:justify-end md:w-auto">
+			<button
+				class="px-3 py-1 rounded-full text-sm border block w-full sm:inline-flex sm:w-auto items-center gap-1"
+				[ngClass]="value.showCompletedOnly ? 'border-emerald-400 bg-white text-gray-900' : 'border-white/20 text-white/80 hover:border-emerald-400/60'"
+				(click)="toggleFlag('showCompletedOnly')">
+				<span aria-hidden="true">✔</span>
+				<span>Completados</span>
+			</button>
+			<button
+				class="px-3 py-1 rounded-full text-sm border block w-full sm:inline-flex sm:w-auto items-center gap-1"
+				[ngClass]="value.showFavoritesOnly ? 'border-yellow-400 bg-white text-gray-900' : 'border-white/20 text-white/80 hover:border-yellow-400/60'"
+				(click)="toggleFlag('showFavoritesOnly')">
+				<span aria-hidden="true">★</span>
+				<span>Favoritos</span>
+			</button>
+		</div>
+	</div>
+
+	<hr class="border-white/20">
+
+	<!-- Botón para colapsar/expandir categorías solo en mobile -->
+	<button class="md:hidden w-full px-3 py-2 rounded bg-white/10 text-white/80 text-sm mb-2"
+		[ngClass]="{'mb-0': !showCategories}" (click)="showCategories = !showCategories">
+		{{ showCategories ? 'Ocultar categorías' : 'Mostrar categorías' }}
+	</button>
+
+	<div class="flex items-center gap-2 flex-wrap transition-all duration-300 overflow-hidden" [ngClass]="{
+				'max-h-0 opacity-0 pointer-events-none': !showCategories,
+				'max-h-[1000px] opacity-100': showCategories,
+				'md:flex': true
+			}">
+		<span class="text-sm text-white/60">Categorías:</span>
+		<ng-container *ngFor="let c of allCategories">
+			<button class="px-3 py-1 rounded-full text-sm border"
+				[ngClass]="value.categories.includes(c) ? 'border-sky-400 bg-white text-gray-900' : 'border-white/20 text-white/80 hover:border-white/40'"
+				(click)="toggleCategory(c)">{{ c }}</button>
+		</ng-container>
+	</div>
+</div>
+
+<div *ngIf="!value.showMovies && !value.showVideogames && !value.showCompletedOnly && !value.showFavoritesOnly && value.categories.length === 0"
+	class="text-center text-lg text-red-400 mt-3">
+	<span>
+		No se muestra contenido porque tienes desactivads los filtros de Películas y Videojuegos. Activa al menos uno
+		para ver resultados.
+	</span>
+</div>

@@ -1,0 +1,63 @@
+<div class="min-h-screen bg-[#0f171e] py-12">
+  <div class="max-w-lg mx-auto bg-[#0b1218] border border-white/10 rounded-xl p-6 md:p-8 shadow text-white">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center mb-8">Nuevo perfil</h2>
+
+    <form *ngIf="user as u" (ngSubmit)="save()" class="space-y-6">
+      <div class="flex flex-col items-center gap-4">
+        <div class="relative">
+          <img [src]="u.avatar || defaultImg" [alt]="u.name"
+            class="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-2 ring-sky-400/40" />
+        </div>
+
+        <input [(ngModel)]="u.name" name="name" type="text"
+          class="w-full border border-white/20 bg-[#0f1922] rounded px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
+          placeholder="Nombre del perfil" />
+      </div>
+
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="font-semibold text-white/90">¿Perfil infantil?</div>
+          <div class="text-sm text-white/50">Series y películas para edades de 12 años o menos</div>
+          <a href="#" class="text-sm text-sky-400 hover:underline">Más información</a>
+        </div>
+
+        <label class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" [(ngModel)]="u.isMinor" name="isMinor" class="sr-only peer">
+          <div
+            class="relative w-11 h-6 flex-shrink-0 rounded-full bg-white/20 transition-colors duration-200 peer-checked:bg-sky-600 peer-focus:outline-none
+                   after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:bg-white after:rounded-full after:transition-transform after:duration-200 peer-checked:after:translate-x-5">
+          </div>
+        </label>
+      </div>
+
+      <div class="pt-6 mt-2 border-t border-white/10">
+        <div class="flex flex-col gap-3 md:flex-row md:gap-4">
+          <button type="button" (click)="openModal('delete')"
+            class="flex-1 px-4 py-2 rounded border border-red-400 text-red-300 hover:bg-red-500/10">Borrar
+            perfil</button>
+          <button type="button" (click)="openModal('clear')"
+            class="flex-1 px-4 py-2 rounded border border-amber-400 text-amber-300 hover:bg-amber-500/10">Vaciar
+            completados<span *ngIf="u?.completedIds?.length"> ({{ u.completedIds.length }})</span></button>
+          <button type="button"
+            (click)="save()"
+            class="flex-1 px-4 py-2 rounded border border-sky-400 text-sky-300 hover:bg-sky-500/10">Guardar cambios</button>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <button type="button" (click)="cancel()"
+          class="w-full px-4 py-2 rounded bg-white/10 hover:bg-white/20 text-white/90">Cancelar</button>
+      </div>
+    </form>
+
+    <app-confirm-modal
+      [open]="modalOpen"
+      [title]="modalType === 'delete' ? '¿Eliminar este perfil?' : modalType === 'clear' ? '¿Vaciar completados?' : '¿Guardar cambios?'"
+      [message]="modalType === 'delete' ? 'Esta acción no se puede deshacer.' : modalType === 'clear' ? 'Se eliminarán todos los elementos completados de este perfil.' : '¿Deseas guardar los cambios realizados en este perfil?'"
+      [confirmText]="modalType === 'delete' ? 'Eliminar' : modalType === 'clear' ? 'Vaciar' : 'Guardar'"
+      [cancelText]="'Cancelar'"
+      (confirm)="confirmModal()"
+      (cancel)="closeModal()"
+    ></app-confirm-modal>
+  </div>
+</div>

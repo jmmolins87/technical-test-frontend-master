@@ -1,0 +1,44 @@
+
+.media-card-btn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+  position: relative;
+}
+
+.is-completed {
+  position: relative;
+  border-color: rgba(16, 185, 129, 0.4); /* emerald-500 ~40% */
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15) inset;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 185, 129, 0.12); /* subtle green veil */
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out;
+    z-index: 1;
+    border-radius: inherit;
+  }
+
+  &:hover::after {
+    opacity: 0.9;
+  }
+}
+
+.wrap-text-card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fav-active {
+  font-weight: bold;
+}
+.fav-pop {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}

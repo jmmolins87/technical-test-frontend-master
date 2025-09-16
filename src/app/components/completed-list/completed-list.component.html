@@ -1,0 +1,47 @@
+<div class="bg-[#0f171e] py-2">
+	<div class="max-w-6xl mx-auto px-4">
+		<app-filters [allCategories]="allCategories" [value]="filters" (filtersChange)="onFiltersChange($event)"
+			(back)="goBack()" class="mb-6 block"></app-filters>
+
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-stretch">
+			<!-- Empty state when no items match filters -->
+			<div class="col-span-full text-center text-white/60 py-4"
+				*ngIf="filteredMovies.length === 0 && filteredGames.length === 0 && !noFiltersSelected">
+				<span *ngIf="filters.showFavoritesOnly; else notFavorites">No hay favoritos que coincidan con los
+					filtros.</span>
+				<ng-template #notFavorites>
+					<span *ngIf="filters.showCompletedOnly; else genericEmpty">No hay completados que coincidan con los
+						filtros.</span>
+				</ng-template>
+				<ng-template #genericEmpty>
+					No hay contenido que coincida con los filtros seleccionados.
+				</ng-template>
+			</div>
+
+			<div class="col-span-full border-b border-white/15 pb-2" *ngIf="filteredMovies.length > 0">
+				<h3 class="text-2xl font-bold text-white">Películas</h3>
+			</div>
+			<ng-container *ngFor="let m of filteredMovies; trackBy: trackByMovie">
+				<div>
+					<app-media-card [src]="m.url" [alt]="m.name" [defaultImg]="defaultImg" [name]="m.name"
+						[categories]="m.category" [isCompleted]="isCompletedMovie(m)" [isFavorite]="isFavoriteMovie(m)"
+						(completed)="toggleCompletedMovie(m)"
+						(favorite)="toggleFavoriteMovie(m, $event)"></app-media-card>
+				</div>
+			</ng-container>
+
+			<div class="col-span-full border-b border-white/15 pb-2" [class.mt-6]="filteredMovies.length > 0"
+				*ngIf="filteredGames.length > 0">
+				<h3 class="text-2xl font-bold text-white">Videojuegos</h3>
+			</div>
+			<ng-container *ngFor="let vg of filteredGames; trackBy: trackByGame">
+				<div class="h-full flex">
+					<app-media-card class="w-full" [src]="vg.url" [alt]="vg.name" [defaultImg]="defaultImg" [name]="vg.name"
+						[categories]="vg.category" [isCompleted]="isCompletedGame(vg)" [isFavorite]="isFavoriteGame(vg)"
+						(completed)="toggleCompletedGame(vg)"
+						(favorite)="toggleFavoriteGame(vg, $event)"></app-media-card>
+				</div>
+			</ng-container>
+		</div>
+	</div>
+</div>

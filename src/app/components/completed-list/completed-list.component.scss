@@ -1,0 +1,37 @@
+/* Styles for completed list */
+
+/* A soft green overlay for completed items */
+.is-completed {
+	position: relative;
+	border-color: rgba(16, 185, 129, 0.4); /* emerald-500 ~40% */
+	box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15) inset;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: rgba(16, 185, 129, 0.12); /* subtle green veil */
+		pointer-events: none;
+		transition: opacity 150ms ease-in-out;
+	}
+
+	/* Intensify a bit on hover to reinforce state */
+	&:hover::after {
+		opacity: 0.9;
+	}
+}
+
+/* Favorite star micro-interaction */
+.fav-active {
+	text-shadow: 0 0 8px rgba(250, 204, 21, 0.75); /* yellow-400 glow */
+}
+
+@keyframes fav-pop-keyframes {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+.fav-pop {
+	animation: fav-pop-keyframes 160ms ease-out;
+}

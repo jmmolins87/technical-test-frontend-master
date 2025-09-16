@@ -1,0 +1,15 @@
+.media-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/3;
+    min-height: 0;
+}
+.media-img img {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
