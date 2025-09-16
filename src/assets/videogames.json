@@ -1,0 +1,182 @@
+[
+  {
+    "_id": "1",
+    "name": "The Legend of Zelda: Ocarina of Time",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg",
+    "category": ["Aventura", "Acción"]
+  },
+  {
+    "_id": "2",
+    "name": "Super Mario Bros.",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png",
+    "category": ["Plataformas"]
+  },
+  {
+    "_id": "3",
+    "name": "Tetris",
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/7c/Tetris_NES_cover_art.jpg",
+    "category": ["Puzzle"]
+  },
+  {
+    "_id": "4",
+    "name": "The Witcher 3: Wild Hunt",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+    "category": ["Rol", "Acción"]
+  },
+  {
+    "_id": "5",
+    "name": "Red Dead Redemption 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+    "category": ["Aventura", "Acción"]
+  },
+  {
+    "_id": "6",
+    "name": "The Elder Scrolls V: Skyrim",
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/82/The_Elder_Scrolls_V_Skyrim_cover_art.jpg",
+    "category": ["Rol", "Acción"]
+  },
+  {
+    "_id": "7",
+    "name": "Grand Theft Auto V",
+    "url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    "category": ["Aventura", "Acción"]
+  },
+  {
+    "_id": "8",
+    "name": "Dark Souls",
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d8/Dark_Souls_Cover_Art.jpg",
+    "category": ["Rol", "Acción"]
+  },
+  {
+    "_id": "9",
+    "name": "Half-Life 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg",
+    "category": ["Disparos en primera persona"]
+  },
+  {
+    "_id": "10",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "category": ["Aventura", "Acción"]
+  },
+  {
+    "_id": "11",
+    "name": "The Last of Us",
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/7e/The_Last_of_Us_cover_art.jpg",
+    "category": ["Acción", "Aventura", "Survival Horror"]
+  },
+  {
+    "_id": "12",
+    "name": "Super Mario 64",
+    "url": "https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg",
+    "category": ["Plataformas", "Aventura"]
+  },
+  {
+    "_id": "13",
+    "name": "Metal Gear Solid",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/98/Metal_Gear_Solid_cover_art.png",
+    "category": ["Acción", "Aventura", "Sigilo"]
+  },
+  {
+    "_id": "14",
+    "name": "Chrono Trigger",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/40/Chrono_Trigger.jpg",
+    "category": ["Rol", "Aventura"]
+  },
+  {
+    "_id": "15",
+    "name": "Final Fantasy VII",
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e6/Final_Fantasy_VII_Box_Art.jpg",
+    "category": ["Rol", "Aventura"]
+  },
+  {
+    "_id": "16",
+    "name": "Mass Effect 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/05/MassEffect2_cover.PNG",
+    "category": ["Rol", "Acción", "Ciencia Ficción"]
+  },
+  {
+    "_id": "17",
+    "name": "BioShock",
+    "url": "https://upload.wikimedia.org/wikipedia/en/6/6a/BioShock_cover.jpg",
+    "category": ["Disparos en primera persona", "Horror"]
+  },
+  {
+    "_id": "18",
+    "name": "Portal 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2cover.jpg",
+    "category": ["Puzzle", "Plataformas"]
+  },
+  {
+    "_id": "19",
+    "name": "Street Fighter II",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/Street_Fighter_II_JPN_boxart.png",
+    "category": ["Lucha"]
+  },
+  {
+    "_id": "20",
+    "name": "Halo: Combat Evolved",
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Halo_Combat_Evolved_cover.png",
+    "category": ["Disparos en primera persona", "Ciencia Ficción"]
+  },
+  {
+    "_id": "21",
+    "name": "Castlevania: Symphony of the Night",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/03/Castlevania_SOTN_PAL.jpg",
+    "category": ["Acción", "Aventura", "Plataformas"]
+  },
+  {
+    "_id": "22",
+    "name": "The Legend of Zelda: A Link to the Past",
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/72/The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg",
+    "category": ["Acción", "Aventura"]
+  },
+  {
+    "_id": "23",
+    "name": "Super Metroid",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Metroid_box.jpg",
+    "category": ["Acción", "Aventura"]
+  },
+  {
+    "_id": "24",
+    "name": "World of Warcraft",
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/50/World_of_Warcraft_Box_Art.jpg",
+    "category": ["Rol", "Multijugador masivo en línea"]
+  },
+  {
+    "_id": "25",
+    "name": "Diablo II",
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png",
+    "category": ["Rol", "Acción"]
+  },
+  {
+    "_id": "26",
+    "name": "The Sims",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Sims_Coverart.png",
+    "category": ["Simulación", "Estrategia"]
+  },
+  {
+    "_id": "27",
+    "name": "StarCraft",
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/29/StarCraft_box_art.jpg",
+    "category": ["Estrategia en tiempo real"]
+  },
+  {
+    "_id": "28",
+    "name": "Resident Evil 4",
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d9/Resident_Evil_4_box_artwork.png",
+    "category": ["Acción", "Aventura", "Survival Horror"]
+  },
+  {
+    "_id": "29",
+    "name": "Uncharted 2: Among Thieves",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Uncharted_2_Box_Art.jpg",
+    "category": ["Acción", "Aventura"]
+  },
+  {
+    "_id": "30",
+    "name": "Batman: Arkham City",
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/00/Batman_Arkham_City_Game_Cover.jpg",
+    "category": ["Acción", "Aventura"]
+  }
+]

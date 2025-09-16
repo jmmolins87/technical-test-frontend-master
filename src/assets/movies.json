@@ -1,0 +1,363 @@
+[
+  {
+    "_id": "1",
+    "name": "El Padrino",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama"]
+  },
+  {
+    "_id": "2",
+    "name": "Sueños de Fuga",
+    "url": "https://m.media-amazon.com/images/I/519NBNHX5BL._AC_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "3",
+    "name": "El Padrino: Parte II",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama"]
+  },
+  {
+    "_id": "4",
+    "name": "El Caballero Oscuro",
+    "url": "https://m.media-amazon.com/images/I/51k0qa6qJgL._AC_.jpg",
+    "category": ["Acción", "Crimen", "Drama"]
+  },
+  {
+    "_id": "5",
+    "name": "12 Hombres sin Piedad",
+    "url": "https://m.media-amazon.com/images/I/51K0ZKRwRLL._AC_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "6",
+    "name": "La Lista de Schindler",
+    "url": "https://m.media-amazon.com/images/I/51T8rOeNKYL._AC_.jpg",
+    "category": ["Biografía", "Drama", "Historia"]
+  },
+  {
+    "_id": "7",
+    "name": "El Señor de los Anillos: El Retorno del Rey",
+    "url": "https://m.media-amazon.com/images/I/51Qvs9i5a%2BL._AC_.jpg",
+    "category": ["Aventura", "Drama", "Fantasía"]
+  },
+  {
+    "_id": "8",
+    "name": "Pulp Fiction",
+    "url": "https://m.media-amazon.com/images/I/51c6S4kGFmL._AC_.jpg",
+    "category": ["Crimen", "Drama"]
+  },
+  {
+    "_id": "9",
+    "name": "El Señor de los Anillos: La Comunidad del Anillo",
+    "url": "https://m.media-amazon.com/images/I/51Qvs9i5a%2BL._AC_.jpg",
+    "category": ["Aventura", "Drama", "Fantasía"]
+  },
+  {
+    "_id": "10",
+    "name": "El Bueno, el Malo y el Feo",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Western"]
+  },
+  {
+    "_id": "11",
+    "name": "Forrest Gump",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Romance"]
+  },
+  {
+    "_id": "12",
+    "name": "El Club de la Pelea",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "13",
+    "name": "El Señor de los Anillos: Las Dos Torres",
+    "url": "https://m.media-amazon.com/images/I/51Qvs9i5a%2BL._AC_.jpg",
+    "category": ["Aventura", "Drama", "Fantasía"]
+  },
+  {
+    "_id": "14",
+    "name": "El Imperio Contraataca",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Aventura", "Fantasía"]
+  },
+  {
+    "_id": "15",
+    "name": "Matrix",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Ciencia Ficción"]
+  },
+  {
+    "_id": "16",
+    "name": "Buenos Muchachos",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Biografía", "Crimen", "Drama"]
+  },
+  {
+    "_id": "17",
+    "name": "Uno de los Nuestros",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama"]
+  },
+  {
+    "_id": "18",
+    "name": "Alguien Voló Sobre el Nido del Cuco",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "19",
+    "name": "Seven",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama", "Misterio"]
+  },
+  {
+    "_id": "20",
+    "name": "Los Siete Samuráis",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Aventura", "Drama"]
+  },
+  {
+    "_id": "21",
+    "name": "Apocalypse Now",
+    "url": "https://m.media-amazon.com/images/I/51-1nGxM1GL._AC_.jpg",
+    "category": ["Drama", "Guerra"]
+  },
+  {
+    "_id": "22",
+    "name": "La Naranja Mecánica",
+    "url": "https://m.media-amazon.com/images/I/51s5nU8JQSL._AC_.jpg",
+    "category": ["Crimen", "Drama", "Ciencia Ficción"]
+  },
+  {
+    "_id": "23",
+    "name": "Lo que el Viento se Llevó",
+    "url": "https://m.media-amazon.com/images/I/51c6S4kGFmL._AC_.jpg",
+    "category": ["Drama", "Historia", "Romance"]
+  },
+  {
+    "_id": "24",
+    "name": "La Ventana Indiscreta",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Misterio", "Suspense"]
+  },
+  {
+    "_id": "25",
+    "name": "Psicosis",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Terror", "Misterio", "Suspense"]
+  },
+  {
+    "_id": "26",
+    "name": "Casablanca",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Romance", "Guerra"]
+  },
+  {
+    "_id": "27",
+    "name": "Ciudadano Kane",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Misterio"]
+  },
+  {
+    "_id": "28",
+    "name": "El Silencio de los Inocentes",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama", "Suspense"]
+  },
+  {
+    "_id": "29",
+    "name": "Salvar al Soldado Ryan",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Guerra"]
+  },
+  {
+    "_id": "30",
+    "name": "La Vida es Bella",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Comedia", "Drama", "Romance"]
+  },
+  {
+    "_id": "31",
+    "name": "Los Intocables",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Biografía", "Crimen", "Drama"]
+  },
+  {
+    "_id": "32",
+    "name": "El Pianista",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Biografía", "Drama", "Música"]
+  },
+  {
+    "_id": "33",
+    "name": "Gladiador",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Aventura", "Drama"]
+  },
+  {
+    "_id": "34",
+    "name": "El Profesional (Léon)",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Crimen", "Drama"]
+  },
+  {
+    "_id": "35",
+    "name": "Terminator 2: El Juicio Final",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Ciencia Ficción"]
+  },
+  {
+    "_id": "36",
+    "name": "Regreso al Futuro",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Aventura", "Comedia", "Ciencia Ficción"]
+  },
+  {
+    "_id": "37",
+    "name": "Whiplash: Música y Obsesión",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Música"]
+  },
+  {
+    "_id": "38",
+    "name": "El Gran Dictador",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Comedia", "Drama", "Guerra"]
+  },
+  {
+    "_id": "39",
+    "name": "El Apartamento",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Comedia", "Drama", "Romance"]
+  },
+  {
+    "_id": "40",
+    "name": "Indiana Jones: En Busca del Arca Perdida",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Aventura"]
+  },
+  {
+    "_id": "41",
+    "name": "El Resplandor",
+    "url": "https://m.media-amazon.com/images/I/51zUbui+gbL._AC_.jpg",
+    "category": ["Terror", "Drama"]
+  },
+  {
+    "_id": "42",
+    "name": "Parásitos",
+    "url": "https://m.media-amazon.com/images/I/71c05L7Cz9L._AC_SY679_.jpg",
+    "category": ["Comedia", "Drama", "Suspense"]
+  },
+  {
+    "_id": "43",
+    "name": "Cinema Paradiso",
+    "url": "https://m.media-amazon.com/images/I/51A8l+FxFNL._AC_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "44",
+    "name": "La Caza",
+    "url": "https://m.media-amazon.com/images/I/81+eA5+3mtL._AC_SY679_.jpg",
+    "category": ["Drama"]
+  },
+  {
+    "_id": "45",
+    "name": "El Gran Escape",
+    "url": "https://m.media-amazon.com/images/I/51G9hW5YH9L._AC_.jpg",
+    "category": ["Aventura", "Drama", "Historia"]
+  },
+  {
+    "_id": "46",
+    "name": "Amadeus",
+    "url": "https://m.media-amazon.com/images/I/51S5EoVYwzL._AC_.jpg",
+    "category": ["Biografía", "Drama", "Historia"]
+  },
+  {
+    "_id": "47",
+    "name": "El Gran Hotel Budapest",
+    "url": "https://m.media-amazon.com/images/I/51Z4FjUgGqL._AC_.jpg",
+    "category": ["Aventura", "Comedia", "Crimen"]
+  },
+  {
+    "_id": "48",
+    "name": "Django Desencadenado",
+    "url": "https://m.media-amazon.com/images/I/51k0qa6qJgL._AC_.jpg",
+    "category": ["Drama", "Western"]
+  },
+  {
+    "_id": "49",
+    "name": "El Triángulo de la Tristeza",
+    "url": "https://m.media-amazon.com/images/I/71c05L7Cz9L._AC_SY679_.jpg",
+    "category": ["Comedia", "Drama"]
+  },
+  {
+    "_id": "50",
+    "name": "La La Land: Una Historia de Amor",
+    "url": "https://m.media-amazon.com/images/I/51K0ZKRwRLL._AC_.jpg",
+    "category": ["Comedia", "Drama", "Música"]
+  },
+  {
+    "_id": "51",
+    "name": "El Laberinto del Fauno",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Fantasía", "Guerra"]
+  },
+  {
+    "_id": "52",
+    "name": "El Secreto de sus Ojos",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Misterio", "Romance"]
+  },
+  {
+    "_id": "53",
+    "name": "La Llegada",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Drama", "Misterio", "Ciencia Ficción"]
+  },
+  {
+    "_id": "54",
+    "name": "El Indomable Will Hunting",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+
+    "category": ["Drama", "Romance"]
+  },
+  {
+    "_id": "55",
+    "name": "La Princesa Mononoke",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Animación", "Aventura", "Fantasía"]
+  },
+  {
+    "_id": "56",
+    "name": "El Castillo Ambulante",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Animación", "Aventura", "Fantasía"]
+  },
+  {
+    "_id": "57",
+    "name": "La Tumba de las Luciérnagas",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Animación", "Drama", "Guerra"]
+  },
+  {
+    "_id": "58",
+    "name": "El Viaje de Chihiro",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Animación", "Aventura", "Familia"]
+  },
+  {
+    "_id": "59",
+    "name": "La Ciudad de Dios",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Crimen", "Drama"]
+  },
+  {
+    "_id": "60",
+    "name": "La Caza del Octubre Rojo",
+    "url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "category": ["Acción", "Aventura", "Suspense"]
+  }
+]
