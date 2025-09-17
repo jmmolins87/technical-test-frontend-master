@@ -32,15 +32,25 @@
 
       <div class="pt-6 mt-2 border-t border-white/10">
         <div class="flex flex-col gap-3 md:flex-row md:gap-4">
+          <button type="button" (click)="save()"
+            class="flex-1 px-4 py-2 rounded border border-sky-400 text-sky-300 hover:bg-sky-500/10">Guardar
+            cambios</button>
+
+          <button type="button" (click)="openModal('clear')" [class]="'flex-1 px-4 py-2 rounded border text-amber-300 ' +
+              (!u?.completedIds || u.completedIds.length === 0
+                ? 'bg-[#1a202c] border-[#4a5568] text-[#a0aec0]'
+                : 'border-amber-400 hover:bg-amber-500/10')"
+            [disabled]="!u?.completedIds || u.completedIds.length === 0">
+            <ng-container *ngIf="!u?.completedIds || u.completedIds.length === 0">
+              No hay nada completado
+            </ng-container>
+            <ng-container *ngIf="u?.completedIds && u.completedIds.length > 0">
+              Vaciar completados<span> ({{ u.completedIds.length }})</span>
+            </ng-container>
+          </button>
           <button type="button" (click)="openModal('delete')"
             class="flex-1 px-4 py-2 rounded border border-red-400 text-red-300 hover:bg-red-500/10">Borrar
             perfil</button>
-          <button type="button" (click)="openModal('clear')"
-            class="flex-1 px-4 py-2 rounded border border-amber-400 text-amber-300 hover:bg-amber-500/10">Vaciar
-            completados<span *ngIf="u?.completedIds?.length"> ({{ u.completedIds.length }})</span></button>
-          <button type="button"
-            (click)="save()"
-            class="flex-1 px-4 py-2 rounded border border-sky-400 text-sky-300 hover:bg-sky-500/10">Guardar cambios</button>
         </div>
       </div>
 
@@ -50,14 +60,10 @@
       </div>
     </form>
 
-    <app-confirm-modal
-      [open]="modalOpen"
+    <app-confirm-modal [open]="modalOpen"
       [title]="modalType === 'delete' ? '¿Eliminar este perfil?' : modalType === 'clear' ? '¿Vaciar completados?' : '¿Guardar cambios?'"
       [message]="modalType === 'delete' ? 'Esta acción no se puede deshacer.' : modalType === 'clear' ? 'Se eliminarán todos los elementos completados de este perfil.' : '¿Deseas guardar los cambios realizados en este perfil?'"
       [confirmText]="modalType === 'delete' ? 'Eliminar' : modalType === 'clear' ? 'Vaciar' : 'Guardar'"
-      [cancelText]="'Cancelar'"
-      (confirm)="confirmModal()"
-      (cancel)="closeModal()"
-    ></app-confirm-modal>
+      [cancelText]="'Cancelar'" (confirm)="confirmModal()" (cancel)="closeModal()"></app-confirm-modal>
   </div>
 </div>
