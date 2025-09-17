@@ -8,13 +8,12 @@ import { Videogame } from '../../models/videogame.model';
 import { UserProfile } from '../../models/user.model';
 import { Subscription } from 'rxjs';
 import { FiltersComponent, ListFilters } from '../filters/filters.component';
-import { MediaImageComponent } from '../media-image/media-image.component';
 import { MediaCardComponent } from '../media-card/media-card.component';
 
 @Component({
   selector: 'app-completed-list',
   standalone: true,
-  imports: [CommonModule, FiltersComponent, MediaImageComponent, MediaCardComponent],
+  imports: [CommonModule, FiltersComponent, MediaCardComponent],
   templateUrl: './completed-list.component.html',
   styleUrls: ['./completed-list.component.scss']
 })
@@ -150,8 +149,12 @@ export class CompletedListComponent implements OnInit, OnDestroy {
     return this.movies.filter((m) => {
       if (!this.filters.showMovies) return false;
       if (this.filters.categories.length && !m.category.some((c) => this.filters.categories.includes(c))) return false;
-      if (this.filters.showCompletedOnly && !this.isCompletedMovie(m)) return false;
-      if (this.filters.showFavoritesOnly && !this.isFavoriteMovie(m)) return false;
+      if (this.filters.showCompletedOnly && this.filters.showFavoritesOnly) {
+        if (!this.isCompletedMovie(m) && !this.isFavoriteMovie(m)) return false;
+      } else {
+        if (this.filters.showCompletedOnly && !this.isCompletedMovie(m)) return false;
+        if (this.filters.showFavoritesOnly && !this.isFavoriteMovie(m)) return false;
+      }
       return true;
     });
   }
@@ -160,8 +163,13 @@ export class CompletedListComponent implements OnInit, OnDestroy {
     return this.videogames.filter((g) => {
       if (!this.filters.showVideogames) return false;
       if (this.filters.categories.length && !g.category.some((c) => this.filters.categories.includes(c))) return false;
-      if (this.filters.showCompletedOnly && !this.isCompletedGame(g)) return false;
-      if (this.filters.showFavoritesOnly && !this.isFavoriteGame(g)) return false;
+      // Si ambos filtros están activos, mostrar si cumple al menos uno
+      if (this.filters.showCompletedOnly && this.filters.showFavoritesOnly) {
+        if (!this.isCompletedGame(g) && !this.isFavoriteGame(g)) return false;
+      } else {
+        if (this.filters.showCompletedOnly && !this.isCompletedGame(g)) return false;
+        if (this.filters.showFavoritesOnly && !this.isFavoriteGame(g)) return false;
+      }
       return true;
     });
   }
